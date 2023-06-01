@@ -92,6 +92,7 @@ namespace AssetStudio
             if (version[0] > 2019 || (version[0] == 2019 && version[1] >= 3)) //2019.3 and up
             {
                 var m_IgnoreMasterTextureLimit = reader.ReadBoolean();
+                var temp = reader.ReadStringArray();
             }
             if (version[0] >= 3) //3.0.0 - 5.4
             {
